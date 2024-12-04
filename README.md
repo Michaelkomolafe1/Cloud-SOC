@@ -1,5 +1,6 @@
 # Building a SOC + Honeynet in Azure (Live Traffic)
-![Cloud Honeynet / SOC](https://i.imgur.com/ZWxe03e.jpg)
+[Cloud Honeynet / SOC] ![Cloud Honeynet](https://github.com/user-attachments/assets/636cf614-488a-4420-9cdd-5a7875c46ed2)
+
 
 ## Introduction
 
@@ -11,11 +12,7 @@ In this project, I build a mini honeynet in Azure and ingest log sources from va
 - SecurityIncident (Incidents created by Sentinel)
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
-## Architecture Before Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
 
-## Architecture After Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
 
 The architecture of the mini honeynet in Azure consists of the following components:
 
@@ -40,16 +37,16 @@ For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL t
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-03-15 17:04:29
-Stop Time 2023-03-16 17:04:29
+Start Time 2024-11-10 01:10:30
+Stop Time 2023-03-16 01:10:30
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 19470
-| Syslog                   | 3028
-| SecurityAlert            | 10
-| SecurityIncident         | 348
-| AzureNetworkAnalytics_CL | 843
+| SecurityEvent            | 3950
+| Syslog                   | 1920
+| SecurityAlert            | 3
+| SecurityIncident         | 50
+| AzureNetworkAnalytics_CL | 80
 
 ## Attack Maps Before Hardening / Security Controls
 
